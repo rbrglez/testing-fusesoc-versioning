@@ -1,0 +1,1 @@
+fusesoc run --setup --target base-target test-target

@@ -1,0 +1,1 @@
+fusesoc run --setup --target intf-target test-target

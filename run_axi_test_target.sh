@@ -1,0 +1,1 @@
+fusesoc run --setup --target axi-target test-target

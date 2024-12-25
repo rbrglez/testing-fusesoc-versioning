@@ -21,12 +21,17 @@ This repository contains several bash scripts that act as wrappers for FuseSoC c
 
 Check out what happens if development version and release version with identical version is initialized.
 
+
+#### Command
+
 ```bash
 ./init_development_olo_3.2.0.sh
 ./init_release_olo_3.2.0.sh
 ./init_test_target_core.sh
 fusesoc core list
 ```
+
+#### Output
 
 ```bash
 $ fusesoc core list
@@ -46,6 +51,8 @@ open-logic:tutorials:quartus_tutorial:3.2.0 :      local : quartus tutorial for 
 open-logic:tutorials:vivado_tutorial:3.2.0  :      local : vivado tutorial for open-logic, targetting Zybo Z7-10 board
 ```
 
+#### Command
+
 ```bash
 ./init_release_olo_3.2.0.sh
 ./init_development_olo_3.2.0.sh
@@ -53,6 +60,7 @@ open-logic:tutorials:vivado_tutorial:3.2.0  :      local : vivado tutorial for o
 fusesoc core list
 ```
 
+#### Output
 
 ```bash
 $ fusesoc core list

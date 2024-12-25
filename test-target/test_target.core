@@ -1,0 +1,41 @@
+CAPI=2:
+
+name : ::test-target:0.1.0
+description : Dummy target
+
+
+filesets:
+  base-rtl:
+    depend:
+      - "^open-logic:open-logic:base:3.0.0"
+
+  axi-rtl:
+    depend:
+      - "^open-logic:open-logic:axi:3.0.0"
+
+  intf-rtl:
+    depend:
+      - "^open-logic:open-logic:intf:3.0.0"
+
+targets:
+  default: &default
+    filesets:
+      - "base-rtl"
+
+  base-target:
+    filesets:
+      - "base-rtl"
+    toplevel: "olo_base_arb_prio"
+    default_tool: vivado
+
+  axi-target:
+    filesets:
+      - "axi-rtl"
+    toplevel: "olo_axi_master_simple"
+    default_tool: vivado
+
+  intf-target:
+    filesets:
+      - "intf-rtl"
+    toplevel: "olo_intf_spi_slave"
+    default_tool: vivado
